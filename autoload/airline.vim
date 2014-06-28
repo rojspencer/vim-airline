@@ -82,6 +82,9 @@ function! airline#switch_matching_theme()
           return 1
         endif
       endfor
+      let palette = g:airline#themes#dark#palette
+      call airline#switch_theme("dark")
+      return 1
     endtry
   endif
   return 0
